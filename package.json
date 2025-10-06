@@ -10,7 +10,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "playwright test",
-    "test:ui": "playwright test --ui",
     "test:report": "playwright show-report",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

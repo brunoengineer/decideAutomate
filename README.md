@@ -52,6 +52,16 @@ The application uses a point-based system where each answer contributes to the o
 - 0-3 points: "You probably shouldn't automate this"
 - Less than 0 points: "Do not Automate this"
 
+## Testing
+
+```bash
+# Run Playwright tests
+npm test
+
+# View test report
+npm run test:report
+```
+
 ## Building for Production
 
 ```bash
