@@ -65,7 +65,7 @@ export const questions: Question[] = [
   },
   {
     id: 'q8',
-    text: 'Does this test for usability, layout, "look," or "feel"?',
+    text: 'Does this test for usability, layout, look, or feel?',
     options: [
       { id: 'q8_a1', text: 'Yes', points: -5 },
       { id: 'q8_a2', text: 'No', points: 0 }
@@ -73,7 +73,7 @@ export const questions: Question[] = [
   },
   {
     id: 'q9',
-    text: 'Is the code being tested "trivial"?',
+    text: 'Is the code being tested trivial?',
     options: [
       { id: 'q9_a1', text: 'Yes', points: -1 },
       { id: 'q9_a2', text: 'No', points: 0 }
