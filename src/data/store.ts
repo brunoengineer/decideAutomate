@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { Answer, Report } from './types';
+import type { Answer, Report } from './types';
 import { questions } from './questions';
 import { calculateTotalScore, getRecommendation } from './scoring';
 

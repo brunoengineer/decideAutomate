@@ -1,4 +1,4 @@
-import { Answer, RecommendationLevel, RecommendationThreshold } from './types';
+import type { Answer, RecommendationThreshold } from './types';
 
 // Recommendation thresholds based on total score
 export const recommendationThresholds: RecommendationThreshold[] = [
