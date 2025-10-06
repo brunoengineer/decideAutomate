@@ -297,9 +297,6 @@ function WizardPage() {
                 <div className="flex-1">
                   <span>{option.text}</span>
                 </div>
-                <div className={`ml-2 px-2 py-1 rounded-md text-sm ${option.points > 0 ? 'bg-green-100 text-green-800' : option.points < 0 ? 'bg-red-100 text-red-800' : 'bg-gray-100 text-gray-800'}`}>
-                  {option.points > 0 ? `+${option.points}` : option.points}
-                </div>
               </div>
             </div>
           ))}
@@ -402,27 +399,22 @@ function ResultsPage() {
       format: 'a4'
     });
     
-    // Add title and test name
+    // Add title with test name
     doc.setFontSize(16);
-    doc.text('Test Automation Assessment Results', 14, 15);
-    doc.setFontSize(12);
-    doc.text(`Test Name: ${testName}`, 14, 22);
+    doc.text(`Test Automation Assessment Results for: ${testName}`, 14, 15);
     
     // Add recommendation
-    doc.setFontSize(14);
-    doc.text('Recommendation', 14, 30);
-    
-    doc.setFontSize(11);
-    doc.text(recommendation.text, 14, 37);
+    doc.setFontSize(12);
+    doc.text(`Recommendation: ${recommendation.text}`, 14, 25);
     
     // Split long description into multiple lines if needed
     const descriptionLines = doc.splitTextToSize(recommendation.description, 250);
-    doc.text(descriptionLines, 14, 43);
+    doc.text(descriptionLines, 14, 32);
     
-    doc.text(`Total Score: ${totalScore} points`, 14, 50 + (descriptionLines.length - 1) * 4);
+    doc.text(`Total Score: ${totalScore} points`, 14, 39 + (descriptionLines.length - 1) * 4);
     
     // Add simple table header
-    let yPosition = 55 + (descriptionLines.length - 1) * 4;
+    let yPosition = 45 + (descriptionLines.length - 1) * 4;
     doc.setFillColor(41, 128, 185);
     doc.setTextColor(255, 255, 255);
     doc.rect(14, yPosition, 100, 8, 'F');
@@ -679,6 +671,7 @@ function ResultsPage() {
   );
 }
 
+// Use basename for GitHub Pages
 const appRouter = createBrowserRouter([
   {
     path: '/',
@@ -692,7 +685,9 @@ const appRouter = createBrowserRouter([
     path: '/results',
     element: <ResultsPage />
   }
-]);
+], {
+  basename: '/decideAutomate'
+});
 
 function App() {
   return (
