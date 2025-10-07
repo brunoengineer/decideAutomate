@@ -182,7 +182,7 @@ function WelcomePage() {
       
       <div className="card mb-6">
         <h2 className="text-xl font-semibold mb-4">Welcome</h2>
-        <p className="mb-6">This tool will help you decide whether a test should be automated based on a series of criteria questions.</p>
+        <p className="mb-6">This tool will help you decide whether a test should be automated.</p>
         
         <div className="mb-6">
           <label htmlFor="testName" className="block text-lg font-medium text-gray-800 mb-2 ml-1">Test Name</label>
