@@ -1,3 +1,10 @@
+## References
+
+This project was inspired by and uses information from:
+
+- [TestRail spreadsheet](https://docs.google.com/spreadsheets/d/12ilW5-WkQ-aWcXs--R-bYpe61x3auR5Mk2mtc4rRWtM/edit?gid=75059267#gid=75059267)
+- [Martin Fowler: The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html#TheImportanceOftestAutomation)
+- [TestRail Blog: How to Automate Test Cases](https://www.testrail.com/blog/automate-testcase/)
 # Automation Decision Tool
 
 A React application that helps QA engineers decide whether a test should be automated or not based on a series of criteria questions.
