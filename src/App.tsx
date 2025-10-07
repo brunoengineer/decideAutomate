@@ -189,8 +189,8 @@ function WelcomePage() {
             <input 
               type="text" 
               id="testName" 
-              className="p-2 border border-gray-300 rounded-md text-lg ml-1" 
-              style={{ height: '40px', width: '400px' }}
+              className="p-2 border border-gray-300 rounded-md text-lg ml-1 w-[400px] max-w-full sm:w-[280px]" 
+              style={{ height: '40px', width: '400px', maxWidth: '100%' }}
               placeholder="Enter the name of the test you want to assess"
               value={testName}
               onChange={(e) => {
