@@ -178,6 +178,7 @@ function WelcomePage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Test Automation Assessment</h1>
+      <p className="mb-6">References: <a href="https://github.com/brunoengineer/decideAutomate" className="text-blue-600 underline" target="_blank">GitHub Repository</a></p>
       
       <div className="card mb-6">
         <h2 className="text-xl font-semibold mb-4">Welcome</h2>
