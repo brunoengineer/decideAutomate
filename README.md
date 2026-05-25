@@ -1,5 +1,9 @@
 ## References
 
+<p align="center">
+  <img src="public/decide-automate.gif" alt="Decide Automate UI preview" width="80%" />
+</p>
+
 This project was inspired by and uses information from:
 
 - [TestRail spreadsheet](https://docs.google.com/spreadsheets/d/12ilW5-WkQ-aWcXs--R-bYpe61x3auR5Mk2mtc4rRWtM/edit?gid=75059267#gid=75059267)
